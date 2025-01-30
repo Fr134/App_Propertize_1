@@ -296,6 +296,8 @@ def render_dashboard():
     inject_custom_css()
     st.title("📊 Dashboard Dati Immobiliari")
 
+    
+
     # Verifica se i dati principali sono disponibili
     if 'data' not in st.session_state or st.session_state['data'] is None:
         st.error("Nessun dato disponibile. Torna alla pagina di caricamento.")
@@ -308,7 +310,7 @@ def render_dashboard():
 
     file_path = st.session_state['uploaded_file']
     data = st.session_state['data']
-    
+    print(data)
     
     
     # Sezione Filtri
