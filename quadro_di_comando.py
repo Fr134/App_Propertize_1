@@ -1005,7 +1005,7 @@ def crea_grafico_barre(df, ricavi_colonna, commissioni_colonna, marginalita_colo
 menu = st.sidebar.selectbox("Navigazione", ["Carica File", "Dashboard"])
 
 if menu == "Carica File":
-    upload_file(file_path)
+    upload_file()
 elif menu == "Dashboard":
     render_dashboard()
 
